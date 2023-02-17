@@ -48,15 +48,23 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 영상 노드를 전송�
 
 <br>
 
+### :scroll: Worksapce tree
+```
+-py_test
+---
+```
+
+
 #### :one: Create Package
 ```
-$ cd camera_ws/src
-$ catkin_create_pkg camera_pkg rospy
+$ cd py_test/src
+$ catkin_create_pkg test_pkg rospy
 ```
 
 <br>
 
-#### :two: Create Package
+#### :two: Source code
+- scripts 디렉토리에 넣지 안고 c++ 코드처럼 "src" 디렉토리에 만들어서 사용했다.
 ```
 $ cd camera_ws/src
 $ catkin_create_pkg camera_pkg rospy
