@@ -10,10 +10,14 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 
 ## ⚙️ 개발환경
 
-### ROS
-- Noetic Ninjemys
-### OpenCV
-- 4.7.0
+### :turtle: Common
+|   **Title**|   **Description**   |
+|:--------   |       :-------------|
+|ROS          |Noetic Ninjemys     |
+|OpenCV       |4.7.0 version       |
+|Python       |3.8.10 version       |
+
+
 
 <br>
 
