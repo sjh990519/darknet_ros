@@ -13,4 +13,6 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 ### :robot: Robot
 |Title|Description|
 |:---|:---:|
-|왼쪽정렬|중앙정렬|
+|Robot|Kobuki|
+|Camera|Kinect|
+|OS|Raspbian Buster|
