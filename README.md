@@ -24,9 +24,9 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 ### :robot: Robot
 |   **Title**|   **Description**   |
 |:--------   |       :-------------|
-|Robot       |Kobuki (yujinrobot)     |
-|Camera      |Kinect (Azure dk)       |
-|OS          |Raspbain Buster (Pi 4 Model B)      |
+|Robot       |Kobuki  (yujinrobot)     |
+|Camera      |Kinect  (Azure dk)       |
+|OS          |Raspbain Buster  (Pi 4 Model B)      |
 
 <br>
 
