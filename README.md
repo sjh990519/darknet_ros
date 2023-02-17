@@ -50,8 +50,17 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 영상 노드를 전송�
 
 ### :scroll: Worksapce tree
 ```
--py_test
----
+py_test
+├── build
+├── cv2
+├── devel
+├── np
+├── rospy
+└── src
+    └── test_pkg
+        └── src
+            └── client.py
+
 ```
 
 
