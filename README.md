@@ -1,7 +1,5 @@
 # darknet_ros
-YOLO ROS: Real-Time Object Detection for ROS
-<br>
-Raspberry Pi 4 + YOLOv3 [ Object detection ]
+Raspberry Pi 4 + YOLOv3 [ Real-Time Object Detection for ROS ]
 
 <br><br><br>
 
