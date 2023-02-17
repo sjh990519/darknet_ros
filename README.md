@@ -39,7 +39,7 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 영상 노드를 전송�
 <br><br><br>
 
 
-## :pushpin: 설명
+## :pushpin: Intsall & Execution
 
 
 
