@@ -10,7 +10,7 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 
 ## ⚙️ 개발환경
 
-### :turtle: Common                           :computer: Desktop
+### :turtle: Common 
 |   **Title**|   **Description**   |
 |:--------   |       :-------------|
 |ROS          |Noetic Ninjemys     |
@@ -21,10 +21,10 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 
 <br>
 
-### :robot: Robot
-|   **Title**|   **Description:hammer:**   |
-|:--------   |       :-------------|
-|Robot       |Kobuki               |
+### :robot: Robot                                                     :computer: Desktop
+|   **Title**|   **Description:hammer:**   |                          |   **Title**|   **Description**   |
+|:--------   |       :-------------|                          |:--------   |       :-------------|
+|Robot       |Kobuki               |                          |OS          |Ubuntu 20.04 LTS     |
 |Camera      |Kinect               |
 |OS          |Raspbian Buster      |
 
