@@ -4,7 +4,7 @@
 <br><br><br>
 
 ## :hammer: 프로젝트 소개
-kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 Desktop에서 yolov3를 실행하는 프로젝트
+kobuki+Raspberry Pi 4 에서 실시간으로 카메라 영상 노드를 전송하여 Desktop에서 yolov3를 실행하는 프로젝트
 
 <br><br>
 
@@ -40,7 +40,6 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 
 
 ## :pushpin: 설명
-- 로봇에 장착한 카메라 영상을 실시간으로 노드로 데스크탑에 전송하여 전송된 노드를 받은 데스크탑에서 yolo를 실행하여 실시간 으로 
 
 
 
