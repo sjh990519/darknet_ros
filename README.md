@@ -44,7 +44,7 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 영상 노드를 전송�
 <br>
 
 ### :strawberry: Raspberry Pi
-- Ros에서 실시간 이미지를 전송에 필요한 python 코드를 실행시킬 패키지 생성
+#### **Ros에서 실시간 이미지를 전송에 필요한 python 코드를 실행시킬 패키지 생성**
 
 <br>
 
