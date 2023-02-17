@@ -11,6 +11,6 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 ## ⚙️ 개발환경
 
 ### :robot: Robot
-- Robot - Kobuki
-- Camera - Kinect
-- OS :  
+제목|내용|설명|
+|:---|---:|:---:|
+|왼쪽정렬|오른쪽정렬|중앙정렬|
