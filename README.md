@@ -10,8 +10,15 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 
 ## ⚙️ 개발환경
 
+### ROS
+- Noetic Ninjemys
+### OpenCV
+- 4.7.0
+
+<br>
+
 ### :robot: Robot
-|   **Title**|   **Description**   |
+|   **Title**|   **Description:hammer:**   |
 |:--------   |       :-------------|
 |Robot       |Kobuki               |
 |Camera      |Kinect               |
@@ -20,3 +27,6 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 <br>
 
 ### :computer: Desktop
+|   **Title**|   **Description**   |
+|:--------   |       :-------------|
+|OS          |Ubuntu 20.04 LTS     |
