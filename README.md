@@ -21,7 +21,7 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 
 <br>
 
-### :robot: Robot 
+### :robot: Robot
 |   **Title**|   **Description:hammer:**   |
 |:--------   |       :-------------| 
 |Robot       |Kobuki               |
