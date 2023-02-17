@@ -9,3 +9,10 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 노드를 전송하여 De
 <br><br><br>
 
 ## ⚙️ 개발환경
+
+<br>
+
+[[Robot]]
+- Robot  : Kobuki
+- Camera : Kienct
+- OS :  
