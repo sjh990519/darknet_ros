@@ -76,8 +76,38 @@ $ cd py_test/src/test_pkg
 $ nano publisher.py
 ```
 
-### :pencil2: Publisher.py 
+### :notebook: Publisher.py 
 ```
+! /usr/bin/env python3
+
+import rospy
+import cv2
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge, CvBridgeError
+
+bridge = CvBridge()
+
+def image_publisher():
+    pub = rospy.Publisher('/camera/image', Image, queue_size=1)
+    rospy.init_node('image_publisher', anonymous=True)
+    rate = rospy.Rate(144)
+
+    cap = cv2.VideoCapture(0, cv2.CAP_V4L)
+    while not rospy.is_shutdown():
+        ret, frame = cap.read()
+        if ret:
+            try:
+                msg = bridge.cv2_to_imgmsg(frame, "bgr8")
+                pub.publish(msg)
+            except CvBridgeError as e:
+                print(e)
+        rate.sleep()
+
+if __name__ == '__main__':
+    try:
+        image_publisher()
+    except rospy.ROSInterruptException:
+        pass
 
 ```
 
