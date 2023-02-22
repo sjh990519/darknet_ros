@@ -17,6 +17,21 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 영상 노드를 전송�
 |OpenCV       |4.7.0 version       |
 |Python       |3.8.10 version      |
 
+<br>
+
+- Dekstop ".bashrc"
+```
+export ROS_MASTER_URI=http://192.168.0.157:11311
+export ROS_HOSTNAME=192.168.0.157
+```
+
+<br>
+
+- Raspberry Pi ".bashrc"
+```
+export ROS_HOSTNAME=192.168.0.162
+export ROS_MASTER_URI=http://192.168.0.157:11311
+```
 
 <br>
 
@@ -239,6 +254,8 @@ $ rosrun test_pkg subscriber.py
 
 
 ## :turtle: Run project
+
+<br>
 
 ### 🖥️ Desktop
 ```
