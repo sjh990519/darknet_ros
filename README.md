@@ -118,4 +118,43 @@ if __name__ == '__main__':
 ```
 
 
+<br>
+
+#### :three: Run
+- 파일을 실행하기 전 먼저 권한을 실행 가능하게 바꿔준다.
+```
+$ sudo chmod +x publisher.py
+```
+
+<br>
+
+- catkin_make
+```
+$ cd ~/py_test
+$ catkin_make
+```
+
+<br>
+
+- rosrun을 하여 실행한다. 
+```
+$ rosrun test_pkg punlisher.py
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
