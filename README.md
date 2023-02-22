@@ -61,7 +61,7 @@ py_test
 ```
 
 
-#### :one: Create Package
+#### :one: Create Package "publisher"
 ```
 $ cd py_test/src
 $ catkin_create_pkg test_pkg rospy
@@ -144,7 +144,7 @@ $ rosrun test_pkg punlisher.py
 ---
 ---
 
-<br><br><br>
+<br><br>
 
 ### :computer: Desktop
 ####  darknet_ros 설치 후 실시간 이미지 구독할 subscriber 패키지 생성
@@ -152,7 +152,7 @@ $ rosrun test_pkg punlisher.py
 
 <br>
 
-### :one: workspace make
+### :one: darknet_ros install
 ```
 $ mkdir darknet_ros
 $ cd darknet_ros
@@ -160,16 +160,78 @@ $ mkdir src
 $ catkin_make
 ```
 
+#### git clone
+```
+$ cd darknet_ros/src
+$ git clone https://github.com/leggedrobotics/darknet_ros.git
+$ cd ..
+$ catkin_make
+```
 
 
+<br>
 
+### :two: Create Package "subscriber"
+```
+$ cd py_test/src
+$ catkin_create_pkg test_pkg rospy
+$ cd ~/py_test/src/test_pkg
+$ nano subscriber.py
+```
 
+<br>
 
+### :notebook: Subscriber.py 
+```
+#!/usr/bin/env python3
 
+import rospy
+import cv2
+import numpy as np
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge, CvBridgeError
 
+bridge = CvBridge()
 
+def image_callback(msg):
+    try:
+        cv_image = bridge.imgmsg_to_cv2(msg, "bgr8")
+    except CvBridgeError as e:
+        print(e)
+    cv2.imshow("Image", cv_image)
+    cv2.waitKey(1)
 
+def image_subscriber():
+    rospy.init_node('image_subscriber', anonymous=True)
+    rospy.Subscriber("/camera/image", Image, image_callback)
+    rospy.spin()
 
+if __name__ == '__main__':
+    image_subscriber()
+```
+
+<br>
+
+#### :three: Run
+- 파일을 실행하기 전 먼저 권한을 실행 가능하게 바꿔준다.
+```
+$ sudo chmod +x subscriber.py
+```
+
+<br>
+
+- catkin_make
+```
+$ cd ~/py_test
+$ catkin_make
+```
+
+<br>
+
+- rosrun을 하여 실행한다. 
+```
+$ rosrun test_pkg subscriber.py
+```
 
 
 
