@@ -17,6 +17,9 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 영상 노드를 전송�
 - 에러의 내용으로는 제공된 인코딩의 형식이 Yolo와 맞지 않아 발생하는 에러이다.
 - 따라서 OpenCV 이미지를 ROS를 통해 게시할 ROS 형식으로 변환하는 방법을 사용하면 에러가 해결된다.
 
+### 2. 라즈베리 파이에서 바로 Yolo를 실행하지 않는 이유
+- 직접 실행시 라즈베리 파이의 물리적인 성능의 한계가 있기 때문이다.
+- 따라서 추후 교수님께 받은 Jetson Nano 보드를 활용하여 직접 로봇에서 돌려 볼 예정이다.
 
 
 <br><br>
@@ -146,6 +149,18 @@ if __name__ == '__main__':
         pass
 
 ```
+
+<br>
+
+#### [Error]  #! /usr/bin/env python3 작성하지 않을 시
+```
+ImportError: libopencv_imgcodecs.so.3.2: cannot open shared object file: No such file or directory
+```
+- 위와 같은 에러가 발생
+- python의 디렉토리 위치를 확인 후 디렉토리에 맞게 
+- 반드시 첫번째 줄에 #! /usr/bin/env python3를 작성한다.
+
+<br>
 
 
 <br>
