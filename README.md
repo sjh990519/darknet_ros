@@ -144,12 +144,21 @@ $ rosrun test_pkg punlisher.py
 ---
 ---
 
-<br><br>
+<br><br><br>
 
 ### :computer: Desktop
 ####  darknet_ros 설치 후 실시간 이미지 구독할 subscriber 패키지 생성
 
 
+<br>
+
+### :one: workspace make
+```
+$ mkdir darknet_ros
+$ cd darknet_ros
+$ mkdir src
+$ catkin_make
+```
 
 
 
