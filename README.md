@@ -164,6 +164,22 @@ ImportError: libopencv_imgcodecs.so.3.2: cannot open shared object file: No such
 
 <br>
 
+####  [Error]   cap = cv2.VideoCapture(0) 로 작성 시
+```
+gstreamer warning: embedded video playback halted; module v4l2src0 reported: could not read from resource.
+```
+- 위와 같은 에러가 발생
+- 해결 방법으로는
+```
+cap = cv2.VideoCapture(0, cv2.CAP_V4L)
+```
+- 변경하면 된다.
+- 혹은 라즈베리 파이에 GStreamer 가 다운이 안되어 있을 수 있다.
+```
+https://qengineering.eu/install-gstreamer-1.18-on-raspberry-pi-4.html
+```
+- 위의 페이지에 맞는 
+
 
 <br>
 
