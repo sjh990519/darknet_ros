@@ -212,7 +212,7 @@ if __name__ == '__main__':
 
 <br>
 
-#### :three: Run
+### :three: Run
 - 파일을 실행하기 전 먼저 권한을 실행 가능하게 바꿔준다.
 ```
 $ sudo chmod +x subscriber.py
@@ -233,7 +233,7 @@ $ catkin_make
 $ rosrun test_pkg subscriber.py
 ```
 
-
+<br><br>
 
 
 
