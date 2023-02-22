@@ -197,14 +197,34 @@ $ gedit darknet_ros.launch
 
 <br>
 
+#### ✔️ 위에서 /camera/iamge 로 노드를 전송하기 때문에 아래와 같이 똑같은 이름으로 변경해준다.
 ```
 <arg name="launch_prefix" default=""/>
 <arg name="image" default="/camera/image"/>
 ```
-
-
+---
 
 <br>
+
+#### ros.yaml
+```
+$ cd ~/darknet_ros/src/darknet_ros/darknet_ros/config
+$ gedit ros.yaml
+```
+<br>
+
+#### ✔️ 위에서 /camera/iamge 로 노드를 전송하기 때문에 아래와 같이 똑같은 이름으로 변경해준다.
+```
+subscribers:
+
+  camera_reading:
+    topic: /camera/image
+    queue_size: 1
+
+```
+---
+
+<br><br>
 
 ### :two: Create Package "subscriber"
 ```
