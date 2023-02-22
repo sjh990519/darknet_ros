@@ -196,6 +196,7 @@ $ gedit darknet_ros.launch
 ```
 
 <br>
+
 ```
 <arg name="launch_prefix" default=""/>
 <arg name="image" default="/camera/image"/>
