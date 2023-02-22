@@ -261,18 +261,32 @@ $ rosrun test_pkg subscriber.py
 
 ### 🖥️ Desktop
 ```
-
+$ roscore
 ```
 
+<br>
 
+### 🍓 Raspberry Pi
+```
+$ cd py_test
+$ source devel/setup.bash
+$ rosrun test_pkg punlisher.py
+```
 
+<br>
 
+### 🖥️ Desktop
+```
+$ cd py_test
+$ source devel/setup.bash
+$ rosrun test_pkg subscriber.py
+```
 
-
-
-
-
-
+```
+$ cd darknet_ros
+$ source devel/setup.bash
+$ roslaunch darknet_ros darknet_ros.launch
+```
 
 
 
