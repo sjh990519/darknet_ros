@@ -71,8 +71,9 @@ $ catkin_create_pkg test_pkg rospy
 
 #### :two: Source code
 - scripts 디렉토리에 넣지 안고 c++ 코드처럼 "src" 디렉토리에 만들어서 사용했다.
+- src/py_test.py 처럼 진행하였다.
 ```
-$ cd camera_ws/src
-$ catkin_create_pkg camera_pkg rospy
+$ cd py_test/src/test_pkg
+$ nano publisher.py
 ```
 
