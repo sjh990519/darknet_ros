@@ -154,7 +154,7 @@ if __name__ == '__main__':
 
 <br>
 
-#### [Error]  #! /usr/bin/env python3 작성하지 않을 시
+####  [Error]   #! /usr/bin/env python3 작성하지 않을 시
 ```
 ImportError: libopencv_imgcodecs.so.3.2: cannot open shared object file: No such file or directory
 ```
