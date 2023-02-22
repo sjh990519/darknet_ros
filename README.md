@@ -20,8 +20,7 @@ kobuki+Raspberry Pi 4 에서 실시간으로 카메라 영상 노드를 전송�
 <br>
 
 - Dekstop 
-<br>
-📜 .bashrc 
+  📜 .bashrc 
 ```
 export ROS_MASTER_URI=http://192.168.0.157:11311
 export ROS_HOSTNAME=192.168.0.157
