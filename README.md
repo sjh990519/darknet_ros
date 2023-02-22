@@ -240,9 +240,10 @@ $ rosrun test_pkg subscriber.py
 
 ## :turtle: Run project
 
+### 🖥️ Desktop
+```
 
-
-
+```
 
 
 
