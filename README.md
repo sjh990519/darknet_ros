@@ -90,7 +90,7 @@ bridge = CvBridge()
 def image_publisher():
     pub = rospy.Publisher('/camera/image', Image, queue_size=1)
     rospy.init_node('image_publisher', anonymous=True)
-    rate = rospy.Rate(144)
+    rate = rospy.Rate(60)
 
     cap = cv2.VideoCapture(0, cv2.CAP_V4L)
     while not rospy.is_shutdown():
