@@ -78,7 +78,7 @@ $ nano publisher.py
 
 ### :notebook: Publisher.py 
 ```
-! /usr/bin/env python3
+#! /usr/bin/env python3
 
 import rospy
 import cv2
@@ -88,10 +88,15 @@ from cv_bridge import CvBridge, CvBridgeError
 bridge = CvBridge()
 
 def image_publisher():
+    
+    # 대기열이 1인 "/camera/iamge" 라는 노드
     pub = rospy.Publisher('/camera/image', Image, queue_size=1)
     rospy.init_node('image_publisher', anonymous=True)
+    
+    # 카메라의 이미지를 초당 60프레임으로 캡쳐 
     rate = rospy.Rate(60)
 
+    # video0 번으로 잡혀있는 카메라의 프레임을 캡쳐
     cap = cv2.VideoCapture(0, cv2.CAP_V4L)
     while not rospy.is_shutdown():
         ret, frame = cap.read()
