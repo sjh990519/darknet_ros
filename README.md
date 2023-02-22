@@ -178,7 +178,7 @@ cap = cv2.VideoCapture(0, cv2.CAP_V4L)
 ```
 https://qengineering.eu/install-gstreamer-1.18-on-raspberry-pi-4.html
 ```
-- 위의 페이지에 맞는 
+- 위의 페이지에 
 
 
 <br>
