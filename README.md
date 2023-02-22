@@ -189,6 +189,19 @@ $ catkin_make
 
 ### :pencil2: Customizing launch/yaml file
 
+#### darknet_ros.launch
+```
+$ cd ~/darknet_ros/src/darknet_ros/darknet_ros/launch
+$ gedit darknet_ros.launch
+```
+
+<br>
+```
+<arg name="launch_prefix" default=""/>
+<arg name="image" default="/camera/image"/>
+```
+
+
 
 <br>
 
