@@ -96,7 +96,7 @@ py_test
 ```
 
 
-#### :one: Create Package "publisher"
+### :one: Create Package "publisher"
 ```
 $ cd py_test/src
 $ catkin_create_pkg test_pkg rospy
@@ -104,7 +104,7 @@ $ catkin_create_pkg test_pkg rospy
 
 <br>
 
-#### :two: Source code
+### :two: Source code
 - scripts 디렉토리에 넣지 안고 c++ 코드처럼 "src" 디렉토리에 만들어서 사용했다.
 ```
 $ cd py_test/src/test_pkg
@@ -183,7 +183,7 @@ https://qengineering.eu/install-gstreamer-1.18-on-raspberry-pi-4.html
 
 <br>
 
-#### :three: Run
+### :three: Run
 - 파일을 실행하기 전 먼저 권한을 실행 가능하게 바꿔준다.
 ```
 $ sudo chmod +x publisher.py
