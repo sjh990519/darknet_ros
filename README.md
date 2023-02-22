@@ -78,7 +78,8 @@ $ nano publisher.py
 
 ### :notebook: Publisher.py 
 
-    <span style="color:red"># 대기열이 1인 "/camera/iamge" 라는 노드</span>
+<span style="color:red"># 대기열이 1인 "/camera/iamge" 라는 노드</span>
+
 ```
 #! /usr/bin/env python3
 
