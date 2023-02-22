@@ -197,7 +197,7 @@ $ gedit darknet_ros.launch
 
 <br>
 
-#### ✔️ 위에서 /camera/iamge 로 노드를 전송하기 때문에 아래와 같이 똑같은 이름으로 변경해준다.
+#### ✔️ 위에서 /camera/image 로 노드를 전송하기 때문에 아래와 같이 똑같은 이름으로 변경해준다.
 ```
 <arg name="launch_prefix" default=""/>
 <arg name="image" default="/camera/image"/>
@@ -213,7 +213,7 @@ $ gedit ros.yaml
 ```
 <br>
 
-#### ✔️ 위에서 /camera/iamge 로 노드를 전송하기 때문에 아래와 같이 똑같은 이름으로 변경해준다.
+#### ✔️ 위에서 /camera/image 로 노드를 전송하기 때문에 아래와 같이 똑같은 이름으로 변경해준다.
 ```
 subscribers:
 
