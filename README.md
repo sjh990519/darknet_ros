@@ -6,6 +6,19 @@
 ## :hammer: 프로젝트 소개
 kobuki+Raspberry Pi 4 에서 실시간으로 카메라 영상 노드를 전송하여 Desktop에서 yolov3를 실행하는 프로젝트
 
+<br>
+
+### 1. opencv를 활용하여 실시간 이미지를 전송하는 이유
+- 라즈베리 파이에 카메라를 바로 실행하여 실행한 노드를 가지고 darknet_ros를 실행 시 
+```
+[ERROR] [1675525011.955618390]: Image message encoding provided is not mono8, mono16, bgr8, bgra8, rgb8 or rgba8.
+```
+- 위와 같은 에러가 발생
+- 에러의 내용으로는 제공된 인코딩의 형식이 Yolo와 맞지 않아 발생하는 에러이다.
+- 따라서 OpenCV 이미지를 ROS를 통해 게시할 ROS 형식으로 변환하는 방법을 사용하면 에러가 해결된다.
+
+
+
 <br><br>
 
 ## ⚙️ 개발환경
