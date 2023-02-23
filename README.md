@@ -69,6 +69,8 @@ export ROS_MASTER_URI=http://192.168.0.157:11311
 |   **Title**|   **Description**   |
 |:--------   |       :-------------|
 |OS          |Ubuntu 20.04 LTS     |
+|CUDA        |11.2.2               |
+|cuDNN       |8.1.1                |
 ---
 
 <br><br><br>
