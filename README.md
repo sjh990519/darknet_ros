@@ -79,6 +79,15 @@ export ROS_MASTER_URI=http://192.168.0.157:11311
 <br>
 
 ### :strawberry: Raspberry Pi
+#### ⚙️ Setting
+
+
+
+
+<br>
+
+---
+
 ####  Ros에서 실시간 이미지를 전송에 필요한 python 코드를 실행시킬 패키지 생성
 
 <br>
