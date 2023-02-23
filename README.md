@@ -79,9 +79,27 @@ export ROS_MASTER_URI=http://192.168.0.157:11311
 <br>
 
 ### :strawberry: Raspberry Pi
-#### ⚙️ Setting
+#### ⚙️ Pi OverClock
 
+```
+$ sudo apt update && sudo apt upgrade && sudo rpipdate
+$ sudo reboot
+$ sudo nano /boot/config.txt
+```
 
+<br>
+
+- 스크롤을 내린 후 [pi4] 항목을 찾은 후 그 아래에 입력
+```
+over_voltage=6
+arm_freq=2147
+gpu_freq=700
+temp_limit=75
+```
+1. over_voltage : 2 마다 0.05V의 전압을 더 사용 한다.
+2. CPU 클록을 2.14GHz로 늘린다. (최대 2,147GHz)
+3. GPU 클록울 700MHz로 늘린다. (최대 750MHz)
+4. 파이 온도가 75도가 되면 클록과 전압을 기본으로 회귀한다. (과열방지)
 
 
 <br>
