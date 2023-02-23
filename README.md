@@ -69,6 +69,8 @@ export ROS_MASTER_URI=http://192.168.0.157:11311
 |   **Title**|   **Description**   |
 |:--------   |       :-------------|
 |OS          |Ubuntu 20.04 LTS     |
+|Architecher |x86_64               |
+|GPU         |GeForce GTX 1060 3GB |
 |CUDA        |11.2.2               |
 |cuDNN       |8.1.1                |
 ---
@@ -248,8 +250,18 @@ $ rosrun test_pkg punlisher.py
 <br>
 
 ### ⚙️ CUDA & cuDNN Install
+#### 0. 이전 버전 삭제
+- 이전에 설치되어있는 cuda를 삭제해야 한다.
+```
+$ sudo apt-get purge nvidia*
+$ sudo apt-get autoremove
+$ sudo apt-get autoclean
+$ sudo rm -rf /usr/local/cuda*
+```
+<br>
 
-
+#### 1. 설치
+- https://developer.nvidia.com/cuda-toolkit-archive 
 
 <br>
 ---
