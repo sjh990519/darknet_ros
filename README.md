@@ -278,7 +278,6 @@ $ sudo sh cuda_11.2.1_460.32.03_linux.run
 ```
 export PATH=/usr/local/cuda-11.2/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-
 ```
 
 <br>
@@ -296,8 +295,31 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PA
 $ tar -xzvf cudnn-11.2-linux-x64v8.1.1.33.tgz
 ```
 
+<br>
 
+- 설치
+```
+$ sudo cp cuda/include/cudnn*.h /usr/local/cuda/include
+$ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
+$ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
+```
 
+<br>
+
+- 설치확인
+```
+$ cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+```
+![222](https://user-images.githubusercontent.com/94280596/221052983-4a1e7618-63ca-4ec9-8f52-a2893a13ad70.png)
+
+<br>
+
+```
+$ ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
+```
+![3333](https://user-images.githubusercontent.com/94280596/221053003-256f3587-526a-4c43-b879-1460c4b36a9a.png)
+
+<br>
 
 ---
 
