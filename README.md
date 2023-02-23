@@ -263,6 +263,7 @@ $ sudo rm -rf /usr/local/cuda*
 - nvidia-driver 재설치
 ```
 $ sudo apt install nvidia-driver-460
+$ sudo reboot
 ```
 
 <br>
@@ -484,8 +485,12 @@ $ source devel/setup.bash
 $ roslaunch darknet_ros darknet_ros.launch
 ```
 
+---
+
+<br><br>
 
 
+## :white_check_mark: 실행 결과
 
 
 
