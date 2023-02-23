@@ -310,14 +310,14 @@ $ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn
 ```
 $ cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ```
-![222](https://user-images.githubusercontent.com/94280596/221052983-4a1e7618-63ca-4ec9-8f52-a2893a13ad70.png)
+![1](https://user-images.githubusercontent.com/94280596/221053281-c16e1f75-d00a-46b0-8edd-d400c3a388db.png)
 
-<br>
+<br><br>
 
 ```
 $ ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
 ```
-![3333](https://user-images.githubusercontent.com/94280596/221053003-256f3587-526a-4c43-b879-1460c4b36a9a.png)
+![2](https://user-images.githubusercontent.com/94280596/221053287-93176561-f124-4a4b-b69f-6562c90d1f1c.png)
 
 <br>
 
