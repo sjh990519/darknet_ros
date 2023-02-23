@@ -465,6 +465,7 @@ $ roscore
 
 ### 🍓 Raspberry Pi
 ```
+$ sudo chmod +x /dev/video*
 $ cd py_test
 $ source devel/setup.bash
 $ rosrun test_pkg punlisher.py
@@ -494,8 +495,20 @@ $ roslaunch darknet_ros darknet_ros.launch
 
 https://user-images.githubusercontent.com/94280596/221054615-48c30686-e886-4449-8260-2e772df68f90.mp4
 
+<br><br>
+
+### rostopic list
+```
+$ rostopic list
+```
+![rostopic list](https://user-images.githubusercontent.com/94280596/221055878-db9f66d6-e5fe-4be6-9cdf-1f4c0c6a55f7.png)
 
 
+<br>
 
-
+### Rqt_graph
+```
+$ rosrun rqt_graph rqt_graph
+```
+![rqt_graph](https://user-images.githubusercontent.com/94280596/221055883-ec96ebd6-4c62-4663-8bd3-84c7a7158d6b.png)
 
