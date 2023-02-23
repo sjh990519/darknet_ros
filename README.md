@@ -495,9 +495,9 @@ $ roslaunch darknet_ros darknet_ros.launch
 
 https://user-images.githubusercontent.com/94280596/221054615-48c30686-e886-4449-8260-2e772df68f90.mp4
 
-<br><br>
+<br><br><br>
 
-### rostopic list
+### Rostopic list
 ```
 $ rostopic list
 ```
