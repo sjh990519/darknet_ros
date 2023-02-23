@@ -490,10 +490,9 @@ $ roslaunch darknet_ros darknet_ros.launch
 <br><br>
 
 
-## :white_check_mark: 실행 결과
+## 🔳 실행 결과
 
-
-
+https://user-images.githubusercontent.com/94280596/221054615-48c30686-e886-4449-8260-2e772df68f90.mp4
 
 
 
