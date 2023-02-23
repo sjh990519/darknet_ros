@@ -80,7 +80,7 @@ export ROS_MASTER_URI=http://192.168.0.157:11311
 
 ### :strawberry: Raspberry Pi
 #### ⚙️ Pi OverClock
-####  - 기본성능으로 노드 전송 시 너무 느려 오버클록을 하여 최대효울을 낼 수 있도록 한다.
+#### 기본성능으로 노드 전송 시 너무 느려 오버클록을 하여 최대효울을 낼 수 있도록 한다.
 
 <br>
 
@@ -240,6 +240,16 @@ $ rosrun test_pkg punlisher.py
 <br><br>
 
 ### :computer: Desktop
+
+<br>
+
+### ⚙️ CUDA & cuDNN Install
+
+
+
+<br>
+---
+
 ####  darknet_ros 설치 후 실시간 이미지 구독할 subscriber 패키지 생성
 
 
