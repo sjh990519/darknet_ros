@@ -259,10 +259,46 @@ $ sudo rm -rf /usr/local/cuda*
 ```
 <br>
 
-#### 1. 설치
-- https://developer.nvidia.com/cuda-toolkit-archive 
+#### 1. CUDA 설치
+- nvidia-driver 재설치
+```
+$ sudo apt install nvidia-driver-460
+```
 
 <br>
+
+- https://developer.nvidia.com/cuda-toolkit-archive 접속하여 원하는 버전을 선택후 설치
+```
+$ wget https://developer.download.nvidia.com/compute/cuda/11.2.1/local_installers/cuda_11.2.1_460.32.03_linux.run
+$ sudo sh cuda_11.2.1_460.32.03_linux.run
+```
+
+#### 2. 설치 후
+- ./bashrc에 아래와 같이 기입한다.
+```
+export PATH=/usr/local/cuda-11.2/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+```
+
+<br>
+
+#### 1. cuDNN 설치
+- cuDNN은 그래픽 카드 가속을 도와주는 library이다. 따로 다운 바당서 경로 설정을 해야한다.
+- https://developer.nvidia.com/cudnn 접속
+- nvidia 로그인 후 자신의 CUDA와 호환되는 버전을 다운로드 한다.
+- 필자는 8.1.1 을 다운받았다.
+
+<br>
+
+- 다운 받은 경로에서 압축해제
+```
+$ tar -xzvf cudnn-11.2-linux-x64v8.1.1.33.tgz
+```
+
+
+
+
 ---
 
 ####  darknet_ros 설치 후 실시간 이미지 구독할 subscriber 패키지 생성
